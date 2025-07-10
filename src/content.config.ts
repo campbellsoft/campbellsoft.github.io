@@ -84,46 +84,6 @@ const contactCollection = defineCollection({
   }),
 });
 
-//pricing collection schema
-const pricingCollection = defineCollection({
-  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/pricing" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    draft: z.boolean(),
-    plans: z
-      .array(
-        z.object({
-          title: z.string(),
-          subtitle: z.string().optional(),
-          price: z.number(),
-          type: z.string(),
-          recommended: z.boolean().optional(),
-          features: z.array(z.string()),
-          button: z.object({
-            label: z.string(),
-            link: z.string().default("/contact"),
-          }),
-        }),
-      )
-      .optional(),
-
-    call_to_action: z
-      .object({
-        title: z.string(),
-        content: z.string(),
-        image: z.string(),
-        button: z
-          .object({
-            enable: z.boolean().default(true),
-            label: z.string(),
-            link: z.string().default("/contact"),
-          })
-          .optional(),
-      })
-      .optional(),
-  }),
-});
 
 // FAQ collection schema
 const faqCollection = defineCollection({
@@ -141,21 +101,6 @@ const faqCollection = defineCollection({
   }),
 });
 
-// Blog collection schema
-const blogCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    date: z.date().optional(),
-    image: z.string().optional(),
-    authors: z.array(z.string()).default(["admin"]),
-    categories: z.array(z.string()).default(["others"]),
-    tags: z.array(z.string()).default(["others"]),
-    draft: z.boolean().optional(),
-  }),
-});
 
 // Pages collection schema
 const pagesCollection = defineCollection({
@@ -172,9 +117,7 @@ const pagesCollection = defineCollection({
 // Export collections
 export const collections = {
   homepage: homepageCollection,
-  blog: blogCollection,
   pages: pagesCollection,
   contact: contactCollection,
-  pricing: pricingCollection,
   faq: faqCollection,
 };

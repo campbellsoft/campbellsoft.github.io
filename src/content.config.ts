@@ -28,7 +28,7 @@ const homepageCollection = defineCollection({
           content: z.string().optional(),
         }),
       ),
-    }),
+    }).optional(),
     services: z
       .array(
         z.object({

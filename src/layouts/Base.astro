@@ -30,6 +30,7 @@ export interface Props {
 
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+const { google_analytics_id } = config.params;
 ---
 
 <!doctype html>
@@ -151,6 +152,19 @@ const { title, meta_title, description, image, noindex, canonical } =
       }`}
     />
     <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Analytics -->
+    {google_analytics_id && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics_id}`}></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', `${google_analytics_id}`);
+        </script>
+      </>
+    )}
   </head>
   <body>
     <Header />

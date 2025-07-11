@@ -1,8 +1,8 @@
 ---
-title: Approach
+title: Working Together
 description: "meta description"
 draft: false
-faqs:
+approaches:
   - title: Who are you?
     answer: My name is [Roger Campbell](https://abqcampbells.com), and I'm the founder—and currently the only full-time employee—of this business. I work closely with trusted advisors, contractors, and cutting-edge AI tools to move quickly and deliver results.<br/><br/> You can click on my name to learn more about my background. As needed, I bring in engineers and specialists to ensure we meet client goals and maintain a high standard of quality.
 

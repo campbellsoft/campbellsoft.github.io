@@ -92,7 +92,7 @@ const approachCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     draft: z.boolean(),
-    faqs: z.array(
+    approaches: z.array(
       z.object({
         title: z.string(),
         answer: z.string(),

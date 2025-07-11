@@ -85,9 +85,9 @@ const contactCollection = defineCollection({
 });
 
 
-// FAQ collection schema
-const faqCollection = defineCollection({
-  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/faq" }),
+// Approach collection schema
+const approachCollection = defineCollection({
+  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/approach" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -119,5 +119,5 @@ export const collections = {
   homepage: homepageCollection,
   pages: pagesCollection,
   contact: contactCollection,
-  faq: faqCollection,
+  approach: approachCollection,
 };

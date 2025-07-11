@@ -35,13 +35,15 @@ const { banner } = homepage.data;
 
           {
             banner?.image && (
-              <Image
-                class="mx-auto mt-12"
-                src={banner?.image}
-                width={750}
-                height={390}
-                alt="banner image"
-              />
+              <picture class="mx-auto mt-12 block">
+                <source srcset={banner.image.replace('.png', '.webp')} type="image/webp" />
+                <Image
+                  src={banner?.image}
+                  width={750}
+                  height={390}
+                  alt="banner image"
+                />
+              </picture>
             )
           }
         </div>

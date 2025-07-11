@@ -1,7 +1,10 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Software development is changing
+  content:
+    New and coming AI tools are making the process of creating software <br/>
+    faster and more efficient. Some of that same technology is enabling <br/>
+    us to make new software applications that were previously  not possible.
   image: /images/banner-art.png
   button:
     enable: true

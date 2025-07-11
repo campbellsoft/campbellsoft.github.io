@@ -25,13 +25,13 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Creating software services that were previously not possible.",
+    "footer_content": "We create software services that were previously not possible",
     "copyright": "All rights reserved - Campbell Software Corporation"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Roger Campbell",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro boilerplate"
+    "meta_description": "Campbell Software Website"
   }
 }

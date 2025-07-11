@@ -1,10 +1,8 @@
 ---
 banner:
-  title: Software development is changing
-  content:
-    New and coming AI tools are making the process of creating software <br/>
-    faster and more efficient. Some of that same technology is enabling <br/>
-    us to make new software applications that were previously  not possible.
+  title: Building faster. Building the impossible.
+  content: Do you have a unique idea for a software project and need help
+    making it a reality?
   image: /images/banner-art.png
   button:
     enable: true

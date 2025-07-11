@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "Campbell Software Corporation Light Astro",
-    "base_url": "https://bigspring-light-astro.vercel.app",
+    "title": "Campbell Software Corporation",
+    "base_url": "https://campbellsoft.dev",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "38",
+    "logo": "/images/mountain_logo.svg",
+    "logo_width": "600",
+    "logo_height": "120",
     "logo_text": "Campbell Software Corporation"
   },
 
@@ -25,8 +25,8 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "footer_content": "Creating software services that were previously not possible.",
+    "copyright": "All rights reserved - Campbell Software Corporation"
   },
 
   "metadata": {

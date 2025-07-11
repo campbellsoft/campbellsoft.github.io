@@ -23,8 +23,11 @@ const { main }: { main: NavigationLink[] } = menu;
 <header class="header">
   <nav class="navbar container">
     <!-- logo -->
-    <div class="order-0">
-      <Logo />
+    <div class="order-0 flex items-center">
+      <Logo /><div class="flex flex-col items-center">
+        <span class="text-lg font-bold text-text-dark leading-tight">Campbell Software</span>
+        <span class="text-lg font-bold text-text-dark leading-tight">Corporation</span>
+      </div>
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />

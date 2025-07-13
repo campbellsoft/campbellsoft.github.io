@@ -36,6 +36,7 @@ export default defineConfig({
       ],
     }),
     mdx(),
+    sitemap(),
   ],
   markdown: {
     remarkPlugins: [

@@ -22,25 +22,9 @@ export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
-  build: {
-    assets: "_astro",
-    assetsPrefix: "https://campbellsoft.dev",
-  },
-  vite: { 
-    plugins: [tailwindcss()],
-    build: {
-      rollupOptions: {
-        output: {
-          entryFileNames: '_astro/[name].[hash].js',
-          chunkFileNames: '_astro/[name].[hash].js',
-          assetFileNames: '_astro/[name].[hash][extname]'
-        }
-      }
-    }
-  },
+  vite: { plugins: [tailwindcss()] },
   integrations: [
     react(),
-    sitemap(),
     AutoImport({
       imports: [
         "@/shortcodes/Button",

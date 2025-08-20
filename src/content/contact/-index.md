@@ -7,6 +7,6 @@ info:
   description: I have an interesting software project that I need help with.
   contacts:
     - "phone: 1 (575) 587-7800"
-    - "Mail: [info@campbellsoft.dev](mailto:info@campbellsoft.dev)"
-    - "Address: Albuquerque, New Mexico USA"
+    - "email: [info@campbellsoft.dev](mailto:info@campbellsoft.dev)"
+    - "location: Albuquerque, New Mexico USA"
 ---

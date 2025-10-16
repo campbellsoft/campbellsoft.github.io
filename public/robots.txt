@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /rss.xml
+
+Sitemap: https://campbellsoft.dev/sitemap-index.xml

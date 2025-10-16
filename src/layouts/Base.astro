@@ -31,6 +31,9 @@ export interface Props {
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
 const { google_analytics_id } = config.params;
+
+// Generate canonical URL if not provided
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
@@ -91,10 +94,23 @@ const { google_analytics_id } = config.params;
     </title>
 
     <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+    <link rel="canonical" href={canonicalURL} item-prop="url" />
 
     <!-- noindex robots -->
     {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <!-- basic structured data -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Campbell Software Corporation",
+        "url": "https://campbellsoft.dev",
+        "logo": "https://campbellsoft.dev/images/mountain_logo.svg",
+        "sameAs": [],
+        "description": "We create software services that were previously not possible"
+      })}
+    </script>
 
     <!-- meta-description -->
     <meta

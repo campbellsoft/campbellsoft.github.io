@@ -7,7 +7,7 @@ const entry = (await getEntry("pages", "404")) as CollectionEntry<"pages">;
 const { Content } = await render(entry);
 ---
 
-<Base title={entry.data.title}>
+<Base title={entry.data.title} noindex={true}>
   <section class="section">
     <div class="container">
       <div class="flex h-[40vh] items-center justify-center">

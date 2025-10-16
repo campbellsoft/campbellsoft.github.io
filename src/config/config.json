@@ -3,7 +3,7 @@
     "title": "Campbell Software Corporation",
     "base_url": "https://campbellsoft.dev",
     "base_path": "/",
-    "trailing_slash": false,
+    "trailing_slash": true,
     "favicon": "/images/favicon.png",
     "logo": "/images/mountain_logo.svg",
     "logo_width": "600",
@@ -19,7 +19,7 @@
   "nav_button": {
     "enable": false,
     "label": "Get Started",
-    "link": "/contact"
+    "link": "/contact/"
   },
 
   "params": {
